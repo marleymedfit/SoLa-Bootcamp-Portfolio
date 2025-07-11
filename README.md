@@ -3,10 +3,10 @@
 Marley Smith
 July 10, 2025
 
-##Portfolio Overview
+## Portfolio Overview
 This portfolio showcases my projects from the SoLa Cybersecurity Bootcamp
 
-##Technologies Used
+## Technologies Used
 -Bash
 -Git
 -Github
@@ -14,5 +14,5 @@ This portfolio showcases my projects from the SoLa Cybersecurity Bootcamp
 -Linux (Ubuntu)
 
 
-##Projects Included
+## Projects Included
 -Bash Scripting Project
