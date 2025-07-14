@@ -1,18 +1,22 @@
 # SoLa Bootcamp Portfolio
-
 Marley Smith
-July 10, 2025
+July 10,2025
+------------------------------------------------------------------------------
+## Portfolio Overview
+This portfolio showcase my projects from the SoLa Cybersecurity Bootcamp.
 
-##Portfolio Overview
-This portfolio showcases my projects from the SoLa Cybersecurity Bootcamp
-
-##Technologies Used
+### Technologies Used
 -Bash
+
 -Git
--Github
+
+-GitHub
+
 -VS Code
+
 -Linux (Ubuntu)
 
+### Projects Included 
+-System Administration Project
 
-##Projects Included
 -Bash Scripting Project
