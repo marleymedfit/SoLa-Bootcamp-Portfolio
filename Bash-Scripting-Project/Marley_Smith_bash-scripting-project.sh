@@ -2,9 +2,29 @@
 # Author: Marley Smith
 # Date July 10,2025
 
+#!/bin/bash
 
-# Sets the output file path (save to Desktop)
-output_file=$HOME/Desktop/system_report_$timestamp.txt
+# ========== SETUP ==========
+# Get timestamp safely
+timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
+
+# Detect who originally invoked sudo (or fallback to current user)
+if [ "$SUDO_USER" ]; then
+    actual_user="$SUDO_USER"
+else
+    actual_user="$USER"
+fi
+
+# Get their home directory (works even under sudo)
+user_home=$(eval echo "~$actual_user")
+
+# Check if Desktop exists, fallback to home if not
+if [ -d "$user_home/Desktop" ]; then
+    output_file="$user_home/Desktop/system_report_$timestamp.txt"
+else
+    output_file="$user_home/system_report_$timestamp.txt"
+fi
+
 
 # Starts writing to the report
 echo "System Report - Generated on $timestamp" > "$output_file"
